@@ -18,7 +18,7 @@ body{
 font-family:Arial, Helvetica, sans-serif;
 background:#111;
 color:white;
-line-height:1.6;
+line-height:1.7;
 }
 
 .hero{
@@ -31,19 +31,30 @@ text-align:center;
 }
 
 .hero-content{
-background:rgba(0,0,0,.55);
-padding:30px;
+background:rgba(0,0,0,.45);
+padding:25px;
 border-radius:12px;
-max-width:800px;
+max-width:650px;
 }
 
 .hero h1{
-font-size:4rem;
-margin-bottom:15px;
+font-size:3rem;
+margin-bottom:10px;
 }
 
 .hero p{
-font-size:1.4rem;
+font-size:1.15rem;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:14px 28px;
+background:white;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
 }
 
 section{
@@ -58,11 +69,24 @@ margin-bottom:30px;
 font-size:2rem;
 }
 
-.about{
+.bio{
+max-width:850px;
+margin:auto;
 text-align:center;
 font-size:1.1rem;
-max-width:800px;
-margin:auto;
+}
+
+.credits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.credit-box{
+background:#1c1c1c;
+padding:25px;
+border-radius:10px;
 }
 
 .gallery{
@@ -84,39 +108,18 @@ text-align:center;
 .socials a{
 color:white;
 font-size:1.2rem;
-text-decoration:none;
 margin:0 15px;
-}
-
-.socials a:hover{
-color:#aaa;
-}
-
-.fun{
-text-align:center;
-}
-
-.fun img{
-max-width:700px;
-width:100%;
-border-radius:12px;
-margin-bottom:20px;
+text-decoration:none;
 }
 
 .contact{
 text-align:center;
 }
 
-.contact a{
-color:white;
-font-size:1.2rem;
-text-decoration:none;
-}
-
 footer{
+background:black;
 text-align:center;
 padding:30px;
-background:#000;
 }
 
 </style>
@@ -136,6 +139,10 @@ Live Performance • Studio Recording<br>
 Touring • Fill-In Gigs
 </p>
 
+<a class="button" href="mailto:jrooks79@me.com">
+Book Jared
+</a>
+
 </div>
 </div>
 
@@ -143,14 +150,16 @@ Touring • Fill-In Gigs
 
 <h2>About Jared</h2>
 
-<div class="about">
+<div class="bio">
 
 <p>
-Professional drummer available for live performance,
-touring, studio recording sessions, theater productions,
-corporate events, and fill-in opportunities.
-Bringing musicality, professionalism, preparation,
-and great groove to every performance.
+Jared Rooks is a professional drummer with experience in live
+performance, studio recording, touring productions, theater
+orchestras, corporate events, and fill-in engagements.
+
+Known for musical versatility, preparation, and professionalism,
+Jared brings strong groove, dynamic sensitivity, and a
+collaborative approach to every performance and recording session.
 </p>
 
 </div>
@@ -159,7 +168,47 @@ and great groove to every performance.
 
 <section>
 
-<h2>Gallery</h2>
+<h2>Credits & Experience</h2>
+
+<div class="credits">
+
+<div class="credit-box">
+<h3>Live Performance</h3>
+<p>Clubs, festivals, concerts, and special events.</p>
+</div>
+
+<div class="credit-box">
+<h3>Studio Recording</h3>
+<p>Professional recording sessions and remote tracking.</p>
+</div>
+
+<div class="credit-box">
+<h3>Touring</h3>
+<p>Regional and national touring experience.</p>
+</div>
+
+<div class="credit-box">
+<h3>Theater & Orchestra</h3>
+<p>Percussion and drum set performance for stage productions.</p>
+</div>
+
+<div class="credit-box">
+<h3>Corporate Events</h3>
+<p>Professional entertainment for private and business events.</p>
+</div>
+
+<div class="credit-box">
+<h3>Fill-In Work</h3>
+<p>Quick preparation and dependable performance when needed.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Photo Gallery</h2>
 
 <div class="gallery">
 
@@ -173,15 +222,13 @@ and great groove to every performance.
 
 <img src="IMG_2598.jpeg">
 
-<img src="IMG_0598.jpeg">
-
 </div>
 
 </section>
 
 <section class="socials">
 
-<h2>Follow Jared</h2>
+<h2>Watch & Follow</h2>
 
 <p>
 
@@ -199,26 +246,14 @@ TikTok
 
 </section>
 
-<section class="fun">
-
-<h2>Fun Stuff</h2>
-
-<img src="E39D0791-710C-4513-8466-44CE8B93A8FA.png">
-
-<p>
-Even orangutans appreciate a good groove.
-</p>
-
-</section>
-
 <section class="contact">
 
-<h2>Booking & Contact</h2>
+<h2>Booking</h2>
 
 <p>
 
-<a href="mailto:jrooks79@me.com">
-jrooks79@me.com
+<a class="button" href="mailto:jrooks79@me.com">
+Book Jared
 </a>
 
 </p>
@@ -227,7 +262,7 @@ jrooks79@me.com
 
 <footer>
 
-<p>© Jared Rooks</p>
+<p>© Jared Rooks | Professional Drummer</p>
 
 </footer>
 
