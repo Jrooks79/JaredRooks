@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jared Rooks | Session Musician • Recording Artist</title>
+<title>Jared Rooks | Session Musician | Recording Artist</title>
 
 <style>
 
@@ -12,10 +12,6 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
 }
 
 body{
@@ -33,8 +29,8 @@ url('IMG_5982.jpeg');
 background-size:cover;
 background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 padding:20px;
 }
@@ -46,63 +42,48 @@ max-width:700px;
 .hero h1{
 font-size:4rem;
 margin-bottom:10px;
-font-weight:700;
 }
 
 .hero h2{
 font-size:1.3rem;
-font-weight:400;
+font-weight:300;
 letter-spacing:1px;
-margin-bottom:30px;
-opacity:.95;
+margin-bottom:35px;
 }
 
 .button{
 display:inline-block;
-background:#fff;
-color:#000;
 padding:15px 35px;
-border-radius:10px;
+background:white;
+color:black;
 text-decoration:none;
 font-weight:bold;
-margin-bottom:25px;
+border-radius:8px;
 }
 
-.social-icons{
-display:flex;
-justify-content:center;
-gap:25px;
-font-size:1.8rem;
-}
-
-.social-icons a{
-text-decoration:none;
-color:white;
-transition:.3s;
-}
-
-.social-icons a:hover{
-opacity:.7;
+.button:hover{
+opacity:.9;
 }
 
 section{
-padding:80px 25px;
 max-width:900px;
 margin:auto;
+padding:80px 25px;
 }
 
-h2.section-title{
-text-align:center;
-margin-bottom:25px;
-font-size:2rem;
-}
-
-.welcome{
+.intro{
 text-align:center;
 font-size:1.15rem;
 }
 
-.recording{
+h2{
+text-align:center;
+margin-bottom:30px;
+font-size:2rem;
+}
+
+.recording,
+.experience{
 text-align:center;
 }
 
@@ -112,20 +93,38 @@ margin-top:20px;
 }
 
 .recording li{
-margin:12px 0;
-font-size:1.1rem;
+margin:10px 0;
 }
 
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .gallery img{
 width:100%;
-display:block;
 border-radius:10px;
+display:block;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:20px;
+}
+
+.social-icons img{
+width:45px;
+height:45px;
+filter:invert(1);
+transition:.3s;
+}
+
+.social-icons img:hover{
+opacity:.7;
+transform:scale(1.1);
 }
 
 .center{
@@ -134,15 +133,14 @@ text-align:center;
 
 .email{
 font-size:1.2rem;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 footer{
-background:#111;
-padding:40px;
 text-align:center;
+padding:40px;
+background:#111;
 font-size:.9rem;
-opacity:.8;
 }
 
 @media(max-width:768px){
@@ -153,10 +151,6 @@ font-size:2.8rem;
 
 .hero h2{
 font-size:1rem;
-}
-
-.social-icons{
-font-size:1.5rem;
 }
 
 }
@@ -173,24 +167,12 @@ font-size:1.5rem;
 <h1>Jared Rooks</h1>
 
 <h2>
-Session Musician • Recording Artist
+Session Musician | Recording Artist
 </h2>
 
 <a href="mailto:jrooks79@me.com" class="button">
 Book Jared
 </a>
-
-<div class="social-icons">
-
-<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank">
-🎵
-</a>
-
-<a href="mailto:jrooks79@me.com">
-✉️
-</a>
-
-</div>
 
 </div>
 
@@ -198,15 +180,11 @@ Book Jared
 
 <section>
 
-<h2 class="section-title">
-Welcome to JaredRooks.com
-</h2>
-
-<div class="welcome">
+<div class="intro">
 
 <p>
 
-Jared Rooks is a St. Louis–based session musician and recording artist available for recording sessions, live performance, touring, and fill-in opportunities.
+Jared Rooks is a session musician and recording artist available for recording sessions, live performance, touring, and fill-in opportunities.
 
 </p>
 
@@ -224,9 +202,39 @@ Known for strong pocket, musical versatility, and a commitment to serving the so
 
 <section>
 
-<h2 class="section-title">
-Recording
-</h2>
+<h2>Experience</h2>
+
+<div class="experience">
+
+<p>
+
+From intimate club stages to arena-sized productions, Jared Rooks has built a reputation as a dependable and versatile session musician.
+
+</p>
+
+<br>
+
+<p>
+
+His performance experience spans live concerts, recording sessions, touring productions, worship environments, corporate events, theater productions, and collaborations with both local and national artists.
+
+</p>
+
+<br>
+
+<p>
+
+Known for strong pocket, musical sensitivity, and professionalism, Jared approaches every opportunity with the same goal: serve the song and support the artist.
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Recording</h2>
 
 <div class="recording">
 
@@ -235,17 +243,11 @@ Professional drum tracks for artists, producers, songwriters, and bands.
 </p>
 
 <ul>
-
 <li>Remote Sessions</li>
-
 <li>Singles & Albums</li>
-
 <li>Overdubs</li>
-
 <li>Studio Recording</li>
-
 <li>Live Performance</li>
-
 </ul>
 
 </div>
@@ -254,21 +256,15 @@ Professional drum tracks for artists, producers, songwriters, and bands.
 
 <section>
 
-<h2 class="section-title">
-Photos
-</h2>
+<h2>Photos</h2>
 
 <div class="gallery">
 
-<img src="IMG_0800.png">
+<img src="IMG_0800.png" alt="Jared Rooks">
 
-<img src="IMG_5394.jpeg">
+<img src="IMG_5394.jpeg" alt="Jared Rooks">
 
-<img src="IMG_2597.jpeg">
-
-<img src="IMG_2503.jpeg">
-
-<img src="IMG_2598.jpeg">
+<img src="IMG_2597.jpeg" alt="Jared Rooks">
 
 </div>
 
@@ -276,14 +272,38 @@ Photos
 
 <section>
 
-<h2 class="section-title">
-Performance Videos
-</h2>
+<h2>Performance Videos</h2>
 
 <div class="center">
 
-<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank" class="button">
-Watch Performance Videos
+<p>
+Watch recent performances and collaborations.
+</p>
+
+<div class="social-icons">
+
+<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Follow Jared</h2>
+
+<div class="social-icons">
+
+<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+</a>
+
+<a href="https://www.instagram.com/reel/DY3tTWCDYmB/?igsh=MXh5bzhubjUwMHFqcA==" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
 </a>
 
 </div>
@@ -292,9 +312,7 @@ Watch Performance Videos
 
 <section>
 
-<h2 class="section-title">
-Booking & Inquiries
-</h2>
+<h2>Contact</h2>
 
 <div class="center">
 
@@ -312,7 +330,8 @@ Contact Jared
 
 <footer>
 
-Jared Rooks • Session Musician • Recording Artist
+Jared Rooks<br>
+Session Musician | Recording Artist
 
 </footer>
 
