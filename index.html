@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jared Rooks | Professional Drummer</title>
+<title>Jared Rooks | Professional Drummer • Session Musician • Recording Artist</title>
 
 <style>
 
@@ -14,11 +14,36 @@ padding:0;
 box-sizing:border-box;
 }
 
+html{
+scroll-behavior:smooth;
+}
+
 body{
 font-family:Arial, Helvetica, sans-serif;
 background:#111;
 color:white;
 line-height:1.7;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,.9);
+padding:15px;
+text-align:center;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#c9a227;
 }
 
 .hero{
@@ -28,37 +53,50 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+padding:20px;
 }
 
 .hero-content{
-background:rgba(0,0,0,.45);
-padding:25px;
+background:rgba(0,0,0,.55);
+padding:30px;
 border-radius:12px;
-max-width:650px;
+max-width:750px;
 }
 
 .hero h1{
 font-size:3rem;
-margin-bottom:10px;
+margin-bottom:15px;
+}
+
+.hero h2{
+font-size:1.4rem;
+font-weight:normal;
+margin-bottom:20px;
+color:#c9a227;
 }
 
 .hero p{
-font-size:1.15rem;
+font-size:1.1rem;
+margin-bottom:20px;
 }
 
-.button{
+.btn{
 display:inline-block;
-margin-top:20px;
 padding:14px 28px;
 background:white;
 color:black;
 text-decoration:none;
 font-weight:bold;
 border-radius:8px;
+margin:8px;
+}
+
+.btn:hover{
+background:#ddd;
 }
 
 section{
-padding:70px 20px;
+padding:80px 20px;
 max-width:1100px;
 margin:auto;
 }
@@ -67,26 +105,51 @@ h2{
 text-align:center;
 margin-bottom:30px;
 font-size:2rem;
+color:#c9a227;
 }
 
-.bio{
-max-width:850px;
+.about,
+.recording,
+.experience,
+.contact{
+max-width:900px;
 margin:auto;
 text-align:center;
-font-size:1.1rem;
 }
 
-.credits{
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+}
+
+.card{
+background:#1d1d1d;
+padding:25px;
+border-radius:10px;
+}
+
+.socials{
 text-align:center;
 }
 
-.credit-box{
-background:#1c1c1c;
-padding:25px;
-border-radius:10px;
+.socials a{
+display:inline-block;
+margin:10px;
+padding:12px 24px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+}
+
+.instagram{
+background:#E4405F;
+}
+
+.tiktok{
+background:#000;
+border:1px solid white;
 }
 
 .gallery{
@@ -101,25 +164,28 @@ border-radius:10px;
 display:block;
 }
 
-.socials{
-text-align:center;
-}
-
-.socials a{
-color:white;
-font-size:1.2rem;
-margin:0 15px;
-text-decoration:none;
-}
-
-.contact{
-text-align:center;
-}
-
 footer{
 background:black;
 text-align:center;
 padding:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.hero h2{
+font-size:1.1rem;
+}
+
+nav a{
+display:inline-block;
+margin:5px 8px;
+font-size:.9rem;
+}
+
 }
 
 </style>
@@ -127,80 +193,103 @@ padding:30px;
 
 <body>
 
-<div class="hero">
+<nav>
+<a href="#about">About</a>
+<a href="#recording">Recording</a>
+<a href="#experience">Experience</a>
+<a href="#media">Media</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+
 <div class="hero-content">
 
 <h1>Jared Rooks</h1>
 
-<p>Professional Drummer</p>
+<h2>Professional Drummer • Session Musician • Recording Artist</h2>
 
 <p>
 Live Performance • Studio Recording<br>
 Touring • Fill-In Gigs
 </p>
 
-<a class="button" href="mailto:jrooks79@me.com">
+<a href="mailto:jrooks79@me.com" class="btn">
 Book Jared
 </a>
 
 </div>
-</div>
 
-<section>
+</section>
+
+<section id="about">
 
 <h2>About Jared</h2>
 
-<div class="bio">
+<div class="about">
 
 <p>
-Jared Rooks is a professional drummer with experience in live
-performance, studio recording, touring productions, theater
-orchestras, corporate events, and fill-in engagements.
+Jared Rooks is a professional drummer, session musician, and recording artist known for delivering strong pocket, musical versatility, and dependable performances both on stage and in the studio.
+</p>
 
-Known for musical versatility, preparation, and professionalism,
-Jared brings strong groove, dynamic sensitivity, and a
-collaborative approach to every performance and recording session.
+<br>
+
+<p>
+With experience in live performance, touring, recording sessions, worship environments, corporate events, and fill-in opportunities, Jared brings a professional approach to every project. His focus is always on serving the song, supporting the artist, and creating memorable musical experiences.
 </p>
 
 </div>
 
 </section>
 
-<section>
+<section id="recording">
 
-<h2>Credits & Experience</h2>
+<h2>Recording Services</h2>
 
-<div class="credits">
+<div class="cards">
 
-<div class="credit-box">
-<h3>Live Performance</h3>
-<p>Clubs, festivals, concerts, and special events.</p>
+<div class="card">
+<h3>Remote Drum Recording</h3>
+<p>
+Professional drum tracks delivered digitally for artists, songwriters, and producers.
+</p>
 </div>
 
-<div class="credit-box">
-<h3>Studio Recording</h3>
-<p>Professional recording sessions and remote tracking.</p>
+<div class="card">
+<h3>Overdubs</h3>
+<p>
+Tasteful drum and percussion performances that elevate existing recordings.
+</p>
 </div>
 
-<div class="credit-box">
-<h3>Touring</h3>
-<p>Regional and national touring experience.</p>
+<div class="card">
+<h3>Album & Single Projects</h3>
+<p>
+Available for demos, singles, EPs, albums, and commercial releases.
+</p>
 </div>
 
-<div class="credit-box">
-<h3>Theater & Orchestra</h3>
-<p>Percussion and drum set performance for stage productions.</p>
 </div>
 
-<div class="credit-box">
-<h3>Corporate Events</h3>
-<p>Professional entertainment for private and business events.</p>
-</div>
+</section>
 
-<div class="credit-box">
-<h3>Fill-In Work</h3>
-<p>Quick preparation and dependable performance when needed.</p>
-</div>
+<section id="experience">
+
+<h2>Experience & Credits</h2>
+
+<div class="cards">
+
+<div class="card">Live Performance</div>
+
+<div class="card">Studio Recording</div>
+
+<div class="card">Touring Productions</div>
+
+<div class="card">Corporate Events</div>
+
+<div class="card">Worship Teams</div>
+
+<div class="card">Fill-In Work</div>
 
 </div>
 
@@ -213,56 +302,62 @@ collaborative approach to every performance and recording session.
 <div class="gallery">
 
 <img src="IMG_0800.png">
-
 <img src="IMG_5394.jpeg">
-
 <img src="IMG_2597.jpeg">
-
 <img src="IMG_2503.jpeg">
-
 <img src="IMG_2598.jpeg">
 
 </div>
 
 </section>
 
-<section class="socials">
+<section id="media">
 
 <h2>Watch & Follow</h2>
 
-<p>
+<div class="socials">
 
-<a href="https://www.instagram.com/reel/DY3tTWCDYmB/?igsh=MXh5bzhubjUwMHFqcA==" target="_blank">
+<a class="instagram"
+href="https://www.instagram.com/reel/DY3tTWCDYmB/?igsh=MXh5bzhubjUwMHFqcA=="
+target="_blank">
 Instagram
 </a>
 
-|
-
-<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank">
+<a class="tiktok"
+href="https://www.tiktok.com/t/ZTBkoXYt8/"
+target="_blank">
 TikTok
 </a>
 
-</p>
+</div>
 
 </section>
 
-<section class="contact">
+<section id="contact">
 
-<h2>Booking</h2>
+<h2>Contact</h2>
+
+<div class="contact">
 
 <p>
+Available for live performance, touring, studio recording, remote drum tracking, and fill-in opportunities.
+</p>
 
-<a class="button" href="mailto:jrooks79@me.com">
-Book Jared
+<br>
+
+<a href="mailto:jrooks79@me.com" class="btn">
+Contact Jared
 </a>
 
-</p>
+</div>
 
 </section>
 
 <footer>
 
-<p>© Jared Rooks | Professional Drummer</p>
+<p>© 2025 Jared Rooks</p>
+
+<p>Professional Drummer • Session Musician • Recording Artist</p>
 
 </footer>
 
