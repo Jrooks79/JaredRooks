@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Jared Rooks | Professional Drummer • Session Musician • Recording Artist</title>
+<title>Jared Rooks | Professional Drummer</title>
 
 <style>
 
@@ -14,41 +14,20 @@ padding:0;
 box-sizing:border-box;
 }
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 font-family:Arial, Helvetica, sans-serif;
-background:#111;
+background:#000;
 color:white;
 line-height:1.7;
 }
 
-nav{
-position:fixed;
-top:0;
-width:100%;
-background:rgba(0,0,0,.9);
-padding:15px;
-text-align:center;
-z-index:1000;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#c9a227;
-}
-
 .hero{
 height:100vh;
-background:url('IMG_5982.jpeg') center center/cover no-repeat;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url('IMG_5982.jpeg');
+background-size:cover;
+background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -57,79 +36,79 @@ padding:20px;
 }
 
 .hero-content{
-background:rgba(0,0,0,.55);
-padding:30px;
-border-radius:12px;
-max-width:750px;
+max-width:800px;
 }
 
 .hero h1{
-font-size:3rem;
-margin-bottom:15px;
+font-size:4rem;
+margin-bottom:10px;
 }
 
 .hero h2{
-font-size:1.4rem;
+font-size:1.5rem;
 font-weight:normal;
-margin-bottom:20px;
-color:#c9a227;
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:1.1rem;
-margin-bottom:20px;
+font-size:1.2rem;
+margin-bottom:30px;
 }
 
-.btn{
+.button{
 display:inline-block;
-padding:14px 28px;
 background:white;
 color:black;
+padding:15px 35px;
+border-radius:10px;
 text-decoration:none;
 font-weight:bold;
-border-radius:8px;
-margin:8px;
-}
-
-.btn:hover{
-background:#ddd;
+margin:10px;
 }
 
 section{
-padding:80px 20px;
-max-width:1100px;
+padding:80px 25px;
+max-width:1000px;
 margin:auto;
 }
 
 h2{
 text-align:center;
 margin-bottom:30px;
-font-size:2rem;
-color:#c9a227;
+font-size:2.2rem;
 }
 
-.about,
-.contact{
-max-width:900px;
+.statement{
+font-size:1.5rem;
+text-align:center;
+max-width:800px;
 margin:auto;
+}
+
+.about{
+max-width:850px;
+margin:auto;
+text-align:center;
+font-size:1.1rem;
+}
+
+.recording{
 text-align:center;
 }
 
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.recording ul{
+list-style:none;
+margin-top:20px;
 }
 
-.card{
-background:#1d1d1d;
-padding:25px;
-border-radius:10px;
+.recording li{
+margin:12px 0;
+font-size:1.1rem;
 }
 
 .gallery{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:20px;
 }
 
@@ -139,41 +118,41 @@ border-radius:10px;
 display:block;
 }
 
-.socials{
+.video{
 text-align:center;
 }
 
-.socials a{
-display:inline-block;
-padding:14px 28px;
-background:black;
-border:1px solid white;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
+.contact{
+text-align:center;
+}
+
+.email{
+font-size:1.3rem;
+margin:20px 0;
 }
 
 footer{
-background:black;
+background:#111;
+padding:40px;
 text-align:center;
-padding:30px;
 }
 
 @media(max-width:768px){
 
 .hero h1{
-font-size:2.2rem;
+font-size:2.6rem;
 }
 
 .hero h2{
 font-size:1.1rem;
 }
 
-nav a{
-display:inline-block;
-margin:5px 8px;
-font-size:.9rem;
+.hero p{
+font-size:1rem;
+}
+
+.statement{
+font-size:1.2rem;
 }
 
 }
@@ -183,28 +162,23 @@ font-size:.9rem;
 
 <body>
 
-<nav>
-<a href="#about">About</a>
-<a href="#recording">Recording</a>
-<a href="#experience">Experience</a>
-<a href="#media">Media</a>
-<a href="#contact">Contact</a>
-</nav>
-
 <section class="hero">
 
 <div class="hero-content">
 
 <h1>Jared Rooks</h1>
 
-<h2>Professional Drummer • Session Musician • Recording Artist</h2>
+<h2>
+Professional Drummer<br>
+Session Musician • Recording Artist
+</h2>
 
 <p>
-Live Performance • Studio Recording<br>
-Touring • Fill-In Gigs
+St. Louis, Missouri<br>
+Available for Recording, Touring, Live Performance & Fill-In Opportunities
 </p>
 
-<a href="mailto:jrooks79@me.com" class="btn">
+<a href="mailto:jrooks79@me.com" class="button">
 Book Jared
 </a>
 
@@ -212,69 +186,69 @@ Book Jared
 
 </section>
 
-<section id="about">
+<section>
+
+<div class="statement">
+
+<strong>
+Great drumming isn't about playing more.
+</strong>
+
+<br><br>
+
+It's about making the music feel better.
+
+</div>
+
+</section>
+
+<section>
 
 <h2>About Jared</h2>
 
 <div class="about">
 
 <p>
-Jared Rooks is a professional drummer, session musician, and recording artist known for delivering strong pocket, musical versatility, and dependable performances both on stage and in the studio.
-</p>
 
-<br>
+Jared Rooks is a professional drummer based in St. Louis, Missouri.
 
-<p>
-With experience in live performance, touring, recording sessions, worship environments, corporate events, and fill-in opportunities, Jared brings a professional approach to every project. His focus is always on serving the song, supporting the artist, and creating memorable musical experiences.
+Known for strong pocket, musical versatility, and dependable performances, Jared is available for live performance, touring, studio recording, remote sessions, and fill-in opportunities.
+
+Whether supporting an artist on stage or recording tracks in the studio, his focus remains the same:
+
+<strong>Serve the song.</strong>
+
 </p>
 
 </div>
 
 </section>
 
-<section id="recording">
+<section>
 
 <h2>Recording Services</h2>
 
-<div class="cards">
+<div class="recording">
 
-<div class="card">
-<h3>Remote Drum Recording</h3>
 <p>
-Professional drum tracks delivered digitally for artists, songwriters, and producers.
+Professional drum tracks for artists, producers, songwriters, and bands.
 </p>
-</div>
 
-<div class="card">
-<h3>Overdubs</h3>
-<p>
-Tasteful drum and percussion performances that elevate existing recordings.
-</p>
-</div>
+<ul>
 
-<div class="card">
-<h3>Album & Single Projects</h3>
-<p>
-Available for demos, singles, EPs, albums, and commercial releases.
-</p>
-</div>
+<li>• Remote Recording</li>
 
-</div>
+<li>• Overdubs</li>
 
-</section>
+<li>• Singles</li>
 
-<section id="experience">
+<li>• EPs</li>
 
-<h2>Experience & Credits</h2>
+<li>• Albums</li>
 
-<div class="cards">
+<li>• Commercial Projects</li>
 
-<div class="card">Live Performance</div>
-<div class="card">Studio Recording</div>
-<div class="card">Touring Productions</div>
-<div class="card">Corporate Events</div>
-<div class="card">Worship Teams</div>
-<div class="card">Fill-In Work</div>
+</ul>
 
 </div>
 
@@ -287,22 +261,32 @@ Available for demos, singles, EPs, albums, and commercial releases.
 <div class="gallery">
 
 <img src="IMG_0800.png">
+
 <img src="IMG_5394.jpeg">
+
 <img src="IMG_2597.jpeg">
+
 <img src="IMG_2503.jpeg">
+
 <img src="IMG_2598.jpeg">
 
 </div>
 
 </section>
 
-<section id="media">
+<section>
 
-<h2>Video Performance</h2>
+<h2>Performance Videos</h2>
 
-<div class="socials">
+<div class="video">
 
-<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank">
+<p>
+Watch recent performances and drum content.
+</p>
+
+<br>
+
+<a href="https://www.tiktok.com/t/ZTBkoXYt8/" target="_blank" class="button">
 Watch Performance Videos
 </a>
 
@@ -310,19 +294,19 @@ Watch Performance Videos
 
 </section>
 
-<section id="contact">
+<section>
 
-<h2>Contact</h2>
+<h2>Booking & Inquiries</h2>
 
 <div class="contact">
 
-<p>
-Available for live performance, touring, studio recording, remote drum tracking, and fill-in opportunities.
-</p>
+<div class="email">
 
-<br>
+jrooks79@me.com
 
-<a href="mailto:jrooks79@me.com" class="btn">
+</div>
+
+<a href="mailto:jrooks79@me.com" class="button">
 Contact Jared
 </a>
 
@@ -332,9 +316,13 @@ Contact Jared
 
 <footer>
 
-<p>© 2025 Jared Rooks</p>
+<p>
+Jared Rooks
+</p>
 
-<p>Professional Drummer • Session Musician • Recording Artist</p>
+<p>
+Professional Drummer • Session Musician • Recording Artist
+</p>
 
 </footer>
 
